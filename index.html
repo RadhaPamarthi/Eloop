@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eloop - Skip the charging hassle</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+        
+        /* Fade In Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        
+        /* Slide In Animation */
+        @keyframes slideIn {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        .slide-in {
+            animation: slideIn 0.8s ease-out forwards;
+        }
+        
+        /* Bounce Animation */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+        
+        .bounce {
+            animation: bounce 2s infinite;
+        }
+        
+        .hero-section {
+            background-image: url('/Users/radhakrishna/Desktop/Eloop/image.png');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+        }
+        
+        .logo-container {
+            background: #000;
+            padding: 8px 24px;
+            clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+            display: inline-block;
+        }
+        .logo {
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-weight: 700;
+            font-size: 1.75rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        
+        .main-heading {
+            font-family: 'DM Serif Display', serif;
+            font-size: 3.5rem;
+            line-height: 1.2;
+        }
+
+        @keyframes shockWave {
+            0% {
+                left: -100px;
+                opacity: 0.1;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                left: 100%;
+                opacity: 0;
+            }
+        }
+
+        .animated-banner {
+            position: relative;
+            overflow: hidden;
+        }
+        .shockwave {
+            position: absolute;
+            top: 0;
+            left: -100px;
+            width: 100px;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.4);
+            filter: blur(10px);
+            animation: shockWave 4s linear infinite;
+            animation-delay: 4s;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Top Banner with Shockwave Animation -->
+    <div class="bg-black text-white text-center py-2 text-sm animated-banner">
+        <div class="shockwave"></div>
+        <p>"Don’t wait to charge—Power up with ELoop 
+
+
+
+
+
+
+            <a href="#" class="underline text-white hover:text-gray-200">find the perfect EV charger 
+            </a> for your journey!" 🚗⚡</p>
+    </div>
+    
+    <!-- Main Navigation Bar -->
+    <nav class="w-full bg-white">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo Section -->
+            <div class="logo-container">
+                <a href="#" class="logo">ELOOP</a>
+            </div>
+            <!-- Navigation Links and Menu -->
+            <div class="flex items-center gap-4">
+                <a href="#" class="px-4 py-2 rounded-lg hover:bg-gray-100">Become a host</a>
+                <button class="flex items-center gap-2 p-2 rounded-lg border border-gray-200 hover:bg-gray-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section relative">
+        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+        <div class="container mx-auto px-4 pt-32">
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-16 text-center">
+        <h1 class="main-heading mb-6 fade-in" style="animation-delay: 0.3s">Skip the charging hassle</h1>
+        <p class="text-xl text-gray-600 fade-in" style="animation-delay: 0.6s">Find EV chargers anywhere with ELoop!</p>
+    </div>
+
+    <!-- Airport Pickup Section -->
+    <div class="container mx-auto px-4 py-16">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+            <!-- Left content -->
+            <div class="w-full md:w-1/2 slide-in" style="animation-delay: 0.3s">
+                <h2 class="text-4xl font-bold mb-6">Turn Your Charger into Cash—Power Up with ELoop!</h2>
+                <p class="text-gray-600 text-lg mb-8">
+                    Effortless EV charging at homes, businesses, and public spots—earn or charge anywhere!
+
+
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-gray-700">No waiting, no overpriced stations—just effortless charging.</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-gray-700">Hosts earn, drivers charge—Monetize your charger or find one on the go!</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-gray-700">Secure payments, real-time availability & 24/7 support</span>
+                    </div>
+                </div>
+                <button class="mt-8 bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700 transition-colors">
+                    Find or List a Charger Now
+                </button>
+            </div>
+            
+            <!-- Right illustration -->
+            <div class="w-full md:w-1/2 fade-in" style="animation-delay: 0.6s">
+                <div class="relative">
+                    <!-- Background ellipse -->
+                    <div class="absolute inset-0 bg-pink-50 rounded-full transform -rotate-6"></div>
+                    <!-- Dotted pattern -->
+                    <div class="absolute top-0 right-0 w-24 h-24">
+                        <div class="grid grid-cols-6 gap-1">
+                            <div class="w-1 h-1 bg-gray-300 rounded-full"></div>
+                            <div class="w-1 h-1 bg-gray-300 rounded-full"></div>
+                            <div class="w-1 h-1 bg-gray-300 rounded-full"></div>
+                            <div class="w-1 h-1 bg-gray-300 rounded-full"></div>
+                            <div class="w-1 h-1 bg-gray-300 rounded-full"></div>
+                            <div class="w-1 h-1 bg-gray-300 rounded-full"></div>
+                            <div class="w-1 h-1 bg-gray-300 rounded-full"></div>
+                            <div class="w-1 h-1 bg-gray-300 rounded-full"></div>
+                            <div class="w-1 h-1 bg-gray-300 rounded-full"></div>
+                        </div>
+                    </div>
+                    <!-- Car and plane illustration -->
+                    <div class="relative p-8">
+                        <svg class="w-full h-auto" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Plane -->
+                            <path d="M280 100 L350 80 L320 120" fill="#6366F1"/>
+                            <!-- Location Pin -->
+                            <circle cx="200" cy="150" r="8" fill="#EC4899"/>
+                            <path d="M200 158 L210 170 L200 165 L190 170 Z" fill="#EC4899"/>
+                            <!-- Car (simplified) -->
+                            <path d="M150 180 Q160 170 180 170 L220 170 Q240 170 250 180 L260 190 Q250 200 230 200 L170 200 Q150 200 140 190 Z" fill="#D1D5DB"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Grid Section -->
+    <div class="container mx-auto px-4 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Decentralized Charging Grid -->
+            <div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
+                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Decentralized Charging Grid</h3>
+                <p class="text-gray-600">Tap into a vast network of home chargers and reduce your range anxiety.</p>
+                <a href="#" class="inline-block mt-6 text-black border-b-2 border-black hover:border-gray-500">Learn more</a>
+            </div>
+
+            <!-- AI-Powered Smart Pricing -->
+            <div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
+                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">AI-Powered Smart Pricing</h3>
+                <p class="text-gray-600">Dynamically optimized rates ensure cost savings of up to 50%.</p>
+                <a href="#" class="inline-block mt-6 text-black border-b-2 border-black hover:border-gray-500">Learn more</a>
+            </div>
+
+            <!-- Green Energy First -->
+            <div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
+                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Green Energy First</h3>
+                <p class="text-gray-600">Power your EV with renewable energy sources through our verified hosts.</p>
+                <a href="#" class="inline-block mt-6 text-black border-b-2 border-black hover:border-gray-500">Learn more</a>
+            </div>
+
+            <!-- Turn Your Charger into Income -->
+            <div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Turn Your Charger into Income</h3>
+                <p class="text-gray-600">Rent out your EV charger and earn money seamlessly.</p>
+                <a href="#" class="inline-block mt-6 text-black border-b-2 border-black hover:border-gray-500">Learn more</a>
+            </div>
+
+            <!-- Save More, Drive More -->
+            <div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
+                <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Save More, Drive More</h3>
+                <p class="text-gray-600">Enjoy low-cost charging compared to expensive public stations.</p>
+                <a href="#" class="inline-block mt-6 text-black border-b-2 border-black hover:border-gray-500">Learn more</a>
+            </div>
+
+            <!-- Trusted & Verified Charging -->
+            <div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
+                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Trusted & Verified Charging</h3>
+                <p class="text-gray-600">Charge with confidence through vetted hosts and secure transactions.</p>
+                <a href="#" class="inline-block mt-6 text-black border-b-2 border-black hover:border-gray-500">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works Section -->
+    <div class="bg-gray-50 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">How It Works</h2>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center text-center max-w-sm transform hover:-translate-y-1 transition-transform duration-300">
+                    <div class="w-24 h-24 bg-gradient-to-br from-purple-100 to-purple-50 rounded-xl flex items-center justify-center mb-6 relative shadow-lg">
+                        <div class="absolute inset-0 bg-white opacity-0 rounded-xl transition-opacity duration-300 hover:opacity-10"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="10" r="3" fill="#8B5CF6" stroke="#8B5CF6" stroke-width="1.5"/>
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="#8B5CF6" stroke-width="1.5"/>
+                            <path d="M8 5l2-2m4 2l-2-2" stroke="#EC4899" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <div class="hidden md:block absolute w-full h-1 bg-gradient-to-r from-purple-200 to-transparent right-[-50%] top-1/2 transform scale-x-150"></div>
+                        <span class="absolute -bottom-2 right-0 w-6 h-6 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm shadow-md">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Find a Charger</h3>
+                    <p class="text-gray-600">Browse nearby charging locations and select the one that best fits your needs</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center text-center max-w-sm transform hover:-translate-y-1 transition-transform duration-300">
+                    <div class="w-24 h-24 bg-gradient-to-br from-green-100 to-green-50 rounded-xl flex items-center justify-center mb-6 relative shadow-lg">
+                        <div class="absolute inset-0 bg-white opacity-0 rounded-xl transition-opacity duration-300 hover:opacity-10"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="4" width="18" height="16" rx="2" stroke="#34D399" stroke-width="1.5"/>
+                            <path d="M7 15h2m4 0h4" stroke="#34D399" stroke-width="1.5" stroke-linecap="round"/>
+                            <circle cx="7" cy="9" r="1" fill="#EC4899"/>
+                            <circle cx="11" cy="9" r="1" fill="#EC4899"/>
+                            <circle cx="15" cy="9" r="1" fill="#EC4899"/>
+                        </svg>
+                        <div class="hidden md:block absolute w-full h-1 bg-gradient-to-r from-green-200 to-transparent right-[-50%] top-1/2 transform scale-x-150"></div>
+                        <span class="absolute -bottom-2 right-0 w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center text-sm shadow-md">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Book & Pay</h3>
+                    <p class="text-gray-600">Reserve your charging slot and pay securely through our platform</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center text-center max-w-sm transform hover:-translate-y-1 transition-transform duration-300">
+                    <div class="w-24 h-24 bg-gradient-to-br from-pink-100 to-pink-50 rounded-xl flex items-center justify-center mb-6 relative shadow-lg">
+                        <div class="absolute inset-0 bg-white opacity-0 rounded-xl transition-opacity duration-300 hover:opacity-10"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 24 24" fill="none">
+                            <path d="M13 10V3L4 14h7v7l9-11h-7z" fill="#EC4899" fill-opacity="0.2" stroke="#EC4899" stroke-width="1.5"/>
+                            <path d="M12 20v2m0-18V2" stroke="#34D399" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M15 7.5l2-1.5m-8 12l-2 1.5" stroke="#8B5CF6" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <span class="absolute -bottom-2 right-0 w-6 h-6 bg-pink-500 text-white rounded-full flex items-center justify-center text-sm shadow-md">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Charge & Go</h3>
+                    <p class="text-gray-600">Arrive at the location, plug in your EV, and charge with confidence</p>
+                </div>
+            </div>
+
+            <!-- Connection Lines with Animation -->
+            <div class="hidden md:block relative mt-12">
+                <div class="absolute left-1/4 top-0 w-1/2 h-0.5 bg-gradient-to-r from-purple-100 via-green-100 to-pink-100"></div>
+                <div class="absolute left-1/2 top-0 w-1 h-4 bg-gradient-to-b from-green-100 to-transparent"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Get Started Section -->
+    <div class="bg-purple-50 py-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <!-- Left Content -->
+                <div class="w-full lg:w-1/2">
+                    <h2 class="text-5xl font-bold mb-6">Get started as a charging host</h2>
+                    <p class="text-xl text-gray-600 mb-8">Turn your EV charger into a revenue stream while helping build a sustainable charging network.</p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#" class="inline-flex items-center justify-center px-8 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors">
+                            Get started
+                        </a>
+                        <div class="relative flex-grow max-w-md">
+                            <input 
+                                type="email" 
+                                placeholder="Enter your email" 
+                                class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-purple-500 transition-colors"
+                            />
+                            <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-purple-600 hover:text-purple-700">
+                                →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Illustration -->
+                <div class="w-full lg:w-1/2">
+                    <div class="relative">
+                        <!-- Isometric Grid Illustrations -->
+                        <svg class="w-full h-auto" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Green Block -->
+                            <path d="M300 50 L400 100 L400 200 L300 150 Z" fill="#34D399" fill-opacity="0.8"/>
+                            <path d="M400 100 L500 50 L500 150 L400 200 Z" fill="#34D399" fill-opacity="0.9"/>
+                            <path d="M300 50 L400 0 L500 50 L400 100 Z" fill="#34D399"/>
+                            
+                            <!-- Pink Block -->
+                            <path d="M150 200 L250 250 L250 350 L150 300 Z" fill="#EC4899" fill-opacity="0.8"/>
+                            <path d="M250 250 L350 200 L350 300 L250 350 Z" fill="#EC4899" fill-opacity="0.9"/>
+                            <path d="M150 200 L250 150 L350 200 L250 250 Z" fill="#EC4899"/>
+                            
+                            <!-- Purple Block -->
+                            <path d="M400 250 L500 300 L500 400 L400 350 Z" fill="#8B5CF6" fill-opacity="0.8"/>
+                            <path d="M500 300 L600 250 L600 350 L500 400 Z" fill="#8B5CF6" fill-opacity="0.9"/>
+                            <path d="M400 250 L500 200 L600 250 L500 300 Z" fill="#8B5CF6"/>
+                            
+                            <!-- Shadow Effects -->
+                            <path d="M300 50 L400 100 L400 110 L300 60 Z" fill="black" fill-opacity="0.1"/>
+                            <path d="M150 200 L250 250 L250 260 L150 210 Z" fill="black" fill-opacity="0.1"/>
+                            <path d="M400 250 L500 300 L500 310 L400 260 Z" fill="black" fill-opacity="0.1"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-black text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- Brand and Social -->
+                <div class="lg:col-span-1">
+                    <div class="logo-container bg-transparent mb-8">
+                        <span class="logo">ELOOP</span>
+                    </div>
+                    <div class="flex gap-4 mb-8">
+                        <a href="#" class="text-white hover:text-gray-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-white hover:text-gray-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-white hover:text-gray-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Host Dashboard</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Charging Network</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">App Features</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Updates</a></li>
+                    </ul>
+                </div>
+
+                <!-- Features -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Features</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Smart Charging</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Host Network</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Payment System</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">User Roles</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Explore Features</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Host Guides</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Community</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Legal</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Partner Program</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
